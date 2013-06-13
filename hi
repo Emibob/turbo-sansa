@@ -1,0 +1,13 @@
+<html>
+<style>
+.grey {
+	color:#ccc;
+}
+</style>
+<body>
+<h1>This is a header</h1>
+<p class ="grey">...and a paragrahph</p>
+<p>The End.</p>
+</body>
+</html>
+
