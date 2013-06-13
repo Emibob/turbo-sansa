@@ -1,0 +1,31 @@
+p{
+	font-size:16px;
+	font-family:sans-serif;
+}
+
+.top-left{
+	width:40%;
+	position:absolute;
+	float:left;
+	background-color:#6666FF;
+	min-height:200px;
+}
+.top-right{
+	width:60%;
+	position:absolute;
+	float:right;
+	background-color:#D00000;
+	min-height:200px;
+}
+.middle{
+	width:80%;
+	margin-left:10%;
+	background-color:#FF6633;
+	min-height:200px;
+}
+.footer{
+	width:100%;
+	background-color:#ccc;
+	min-height:200px;
+	margin:0;
+}
