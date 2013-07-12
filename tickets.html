@@ -1,0 +1,79 @@
+CTYPE html>
+<head>
+<style>
+* {
+	font-family: sans-serif;
+	text-align: center;
+	list-style: none;
+}
+.ticket-box {
+	width:80%;
+	margin-left:10%;
+	border:4px #ccc solid;
+	padding:20px 0px;
+	margin-top:10px;
+}
+.clear{
+	float:clear;
+}
+</style>
+
+
+<script type="text/javascript">
+
+	function show (band, venue, location, venueCapacity, seatsTaken){
+		this.band = band;
+		this.venue = venue;
+		this.location = location;
+		this.venueCapacity = venueCapacity;
+		this.seatsTaken = seatsTaken;
+		this.ticketsLeftToBuy = ticketsAvailable;
+		}
+
+		function ticketsAvailable(){
+			var capMinusBought = this.venueCapacity - this.seatsTaken;
+			return capMinusBought;
+			}
+
+		var stones = new show("The Rolling Stones", "The Verizon Center", "Washington, D.C.", 100, 50);
+		
+		var tame = new show("Tame Impala", "Terminal 5", "New York, NY", 500, 12);
+		
+		var random = Math.random;
+		
+</script>
+</head>
+
+<body>
+
+<script type="text/javascript">
+	var linebreak = "<br />";
+	
+	document.write(stones.ticketsLeftToBuy()+ " of " + stones.venueCapacity + " tickets available to buy for <br />" + stones.band + " show at " + stones.venue + " in " + stones.location +"<br />");
+	
+document.write(linebreak);
+document.write(linebreak);
+
+document.write(tame.ticketsLeftToBuy()+ " of " + tame.venueCapacity + " tickets available to buy for <br />" + tame.band + " show at " + tame.venue + " in " + tame.location +"<br />");
+</script>
+
+<div class="ticket-box">
+<script type="text/javascript">
+for(i = 0; i < (stones.ticketsLeftToBuy()); i++){
+	document.write("http://www.tickets.com/"+i+".html");
+	document.write(linebreak);
+}
+document.write(random(1));
+document.write(linebreak);
+document.write(linebreak);
+document.write(random(0));
+document.write(linebreak);
+document.write(linebreak);
+document.write("...that's all");
+
+</script>
+</div>
+
+</body>
+</html>
+
